@@ -7,9 +7,9 @@ function handleInput(event) {
     const mesage = event.target.value;
     
     if (mesage.trim().length === 0){
-        return spanEl = "Anonymous";
+        return spanEl.textContent = "Anonymous";
     } 
     else {
-        return spanEl.innerHTML = mesage;
+        return spanEl.textContent = mesage;
     }
 }
